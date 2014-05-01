@@ -1,6 +1,8 @@
 module SimpleCaptcha
   class SimpleCaptchaData < ::ActiveRecord::Base
 
+    attr_accessible :key, :value
+
     self.table_name = "simple_captcha_data"
 
     class << self
